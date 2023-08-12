@@ -1,0 +1,524 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('/Assets/fonts/static/Inter-Regular.ttf');
+}
+@font-face {
+    font-family: 'Inter-Regular-Bold';
+    src: url('/Assets/fonts/static/Inter-SemiBold.ttf');
+}
+body{
+    font-family: 'Inter-Regular';
+}
+.header{
+    background-image: linear-gradient(to bottom right, white, #e7f5fe, #d7e7fe);
+    padding-top: 3rem;
+    padding-left: 6rem;
+    padding-bottom: 5rem;
+    width: 60%;
+    border-bottom-right-radius: 2rem;
+    position: relative;
+}
+.logo-div{
+    margin-bottom: 5rem;
+}
+.logo-div img{}
+.header-title-cont{
+    margin-bottom: 2.5rem;
+}
+.title{
+    font-family: 'Inter-Regular-Bold';
+    font-size: 3rem;
+    max-width: 23.7rem;
+}
+.header-text-cont p{
+    font-size: 0.9rem;
+    max-width: 26.5rem;
+}
+.calculator-card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 40%;
+    position: absolute;
+    top: 28%;
+    right: -28%;
+    box-shadow: 10px 10px 25px -1px rgba(0,0,0,0.36);
+}
+.radio-inp-row{
+    display: flex;
+    margin-top: 1.5rem;
+}
+.radio-inp-subcont{
+    flex: 1;
+    display: flex;
+}
+.radio-inp-subcont h4{
+    margin-left: 0.7rem;
+}
+.textbox-row{
+    display: flex;
+    margin-top: 1rem;
+
+}
+
+.textbox-cont{
+    flex: 1;
+    position: relative;
+}
+.textbox-cont p{
+    margin-bottom: 0.3rem;
+}
+.textbox-cont input{
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    padding-left: 0.5rem;
+}
+.textbox-cont input:focus{
+    border-color: rgb(30, 95, 216);
+}
+.textbox-cont span{
+    position: absolute;
+    right: 28%;
+    top: 50%;
+    font-family: 'Inter-Regular-Bold';
+    color: rgb(30, 95, 216);
+}
+.BMI-result-cont{
+    background-color: rgb(30, 95, 216);
+    width: 90%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+.BMI-result-subcont1-hidden{
+    display: none;
+}
+.BMI-result-subcont2{
+    display: none;
+}
+.BMI-result-subcont2-visible{
+    display: block;
+}
+.BMI-result-subcont1 h5{
+    color: white;
+    margin-bottom: 1rem;
+}
+.BMI-result-subcont1 p{
+    color: white;
+    font-size: 0.65rem;
+}
+.BMI-result-subcont2 p{
+    color: white;
+    font-size: 0.7rem;
+}
+.BMI-result-subcont2 h1{
+    color: white;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+.ms1{
+    padding-left: 6rem;
+    display: flex;
+    margin-bottom: 4rem;
+}
+.pic-container{
+    height: 550px;
+    width: 50%;
+}
+.pic-container img{
+    height: 100%;
+    width: 100%;
+}
+.ms1-div2{
+    flex: 1;
+    padding-top: 12rem;
+    padding-left: 5rem;
+}
+.ms1-div2 h1{
+    font-family: 'Inter-Regular-Bold';
+    font-size: 2.2rem;
+    max-width: 23.7rem;
+    margin-bottom: 2.5rem;
+}
+.ms1-div2 p{
+    font-size: 0.9rem;
+    max-width: 26.5rem;
+}
+.ms2{
+    display: flex;
+    padding-left: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-image: linear-gradient(to left, #f6fbff, white);
+}
+.ms2-icon-cont{
+    margin-bottom: 2.5rem;
+}
+.ms2-div{
+    flex: 1;
+}
+.ms2-div-bottom h3{
+    margin-bottom: 2.5rem;
+    font-family: 'Inter-Regular-Bold';
+}
+.ms2-div-bottom p{
+    font-size: 0.9rem;
+    max-width: 20rem;
+}
+.bottom-section{
+    position: relative;
+    padding-left: 6rem;
+    margin-top: 3rem;
+    padding-bottom: 30rem;
+}
+.bs-title-cont{
+    margin-bottom: 2.5rem;
+    display: flex;
+}
+.bottom-section-title{
+    font-family: 'Inter-Regular-Bold';
+    font-size: 2.2rem;
+    max-width: 23.7rem;
+}
+.bs-text-cont{
+    display: flex;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+}
+.bottom-section-text {
+    font-size: 0.9rem;
+    max-width: 31rem;
+}
+.bottom-section-card-gender, .bottom-section-card-age, .bottom-section-card-muscle, .bottom-section-card-pregnancy, .bottom-section-card-race{
+    background-color: white;
+    box-shadow: 23px 32px 21px 1px rgba(193,193,193,0.7);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 0.5rem;
+    padding:  1.5rem 1.2rem 1.5rem 1.2rem;
+}
+.bottom-section-card-gender{
+    top: 0;
+    left: 60%;
+}
+.bottom-section-card-muscle{
+    top: 33%;
+    left: 67%;
+}
+.bottom-section-card-age{
+    top: 33%;
+    right: 35%;
+}
+.bottom-section-card-race{
+    top: 60%;
+    right: 20%;
+}
+.bottom-section-card-pregnancy{
+    top: 60%;
+    right: 45%;
+}
+.bsc-header{
+    display: flex;
+    align-items: center;
+}
+.bsc-header h4{
+    margin-left: 1rem;
+}
+.bottom-section-card-gender p, .bottom-section-card-age p, .bottom-section-card-muscle p, .bottom-section-card-pregnancy p, .bottom-section-card-race p{
+    margin-top: 0.7rem;
+    max-width: 16.8rem;
+    font-size: 0.9rem;
+}
+@media screen and (max-width: 1320px) {
+    .bottom-section{
+        padding-left: 0;
+        height: 20rem;
+    }
+    .bs-title-cont{
+        justify-content: center;
+    }
+    .bs-text-cont{
+        justify-content: center;
+    }
+    .bottom-section-text{
+        text-align: center;
+        max-width: 37rem;
+    }
+
+    .bottom-section-card-gender{
+        top: 23%;
+        left: 15%;
+        height: 8rem;
+    }
+    .bottom-section-card-age{
+        top: 23%;
+        right: 15%;
+        height: 8rem;
+    }
+    .bottom-section-card-muscle{
+        left: 15%;
+        top: 48%;
+        height: 8rem;
+    }
+    .bottom-section-card-pregnancy{
+        right: 15%;
+        top: 48%;
+        height: 8rem;
+    }
+    .bottom-section-card-race{
+        top: 72%;
+        right: 40%;
+    }
+}
+@media screen and (max-width: 1070px) {
+    .textbox-cont input{
+        width: 6rem;
+    }
+    .textbox-cont span{
+        right: 32%;
+    }
+    .pic-container{
+        height: 500px;
+    }
+    .ms2-div p{
+        max-width: 16rem;
+    }
+}
+@media screen and (max-width: 950px) {
+    .header{
+        width: 100%;
+        padding-left: 0;
+    }
+    .logo-div{
+        display: flex;
+        justify-content: center;
+    }
+    .header-title-cont{
+        display: flex;
+        justify-content: center;
+    }
+    .title{
+        text-align: center;
+    }
+    .header-text-cont{
+        display: flex;
+        justify-content: center;
+    }
+    .header-text-cont p{
+        text-align: center;
+        max-width: 38rem;
+    }
+    .calculator-card{
+        right: 15%;
+        width: 70%;
+        top: 85%;
+    }
+    .textbox-cont input{
+        width: 14rem;
+    }
+
+    .BMI-result-subcont1 h5{
+        margin-bottom: 1rem;
+    }
+    .ms1{
+        margin-top: 20rem;
+    }
+    .pic-container{
+        height: 450px;
+    }
+    .ms1-div2{
+        padding-top: 6rem;
+    }
+    .bottom-section-card-gender{
+        left: 5%;
+    }
+    .bottom-section-card-muscle{
+        left: 5%;
+    }
+    .bottom-section-card-age{
+        right: 5%;
+    }
+    .bottom-section-card-pregnancy{
+        right: 5%;
+    }
+    .bottom-section-card-race{
+        right: 32%;
+    }
+}
+@media screen and (max-width:860px) {
+    .title{
+        font-size: 2.6rem;
+        text-align: center;
+        max-width: 21rem;
+    }
+    .header-text-cont p{
+        font-size: 0.7rem;
+        max-width: 30rem;
+    }
+    .ms1{
+        padding-left: 0;
+    }
+    .pic-container{
+        height: 350px;
+    }
+    .ms1-div2{
+        padding-top: 5rem;
+        padding-left: 3rem;
+        padding-right: 0.4rem;
+    }
+    .ms1-div2 h1{
+        font-size: 1.5rem;
+        max-width: 15.2rem;
+    }
+    .ms1-div2 p{
+        font-size: 0.7rem;
+    }
+    .ms2{
+        flex-direction: column;
+    }
+    .ms2-div{
+        margin-top: 1rem;
+        display: flex;
+    }
+    .ms2-icon-cont{
+        margin-right: 2rem;
+    }
+    .ms2-div-bottom h3{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .ms2-div-bottom p{
+        max-width: 30rem;
+        font-size: 0.8rem;
+    }
+    .bottom-section-title{
+        font-size: 1.5rem;
+    }
+    .bottom-section-text{
+        font-size: 0.7rem;
+    }
+    .bottom-section-card-gender p, .bottom-section-card-age p, .bottom-section-card-muscle p, .bottom-section-card-pregnancy p, .bottom-section-card-race p{
+        font-size: 0.7rem;
+    }
+    .bottom-section-card-gender, .bottom-section-card-age, .bottom-section-card-muscle, .bottom-section-card-pregnancy, .bottom-section-card-race{
+        padding: 1rem 0.7rem 1rem 0.7rem;
+    }
+}
+@media screen and (max-width: 720px) {
+    .title{
+        font-size: 2rem;
+    }
+    .textbox-cont input{
+        width: 8rem;
+    }
+    .textbox-cont span{
+        right: 48%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .bottom-section-card-gender p, .bottom-section-card-age p, .bottom-section-card-muscle p, .bottom-section-card-pregnancy p, .bottom-section-card-race p{
+        max-width: 14rem;
+    }
+}
+@media screen and (max-width: 590px) {
+    .pic-container{
+        height: 300px;
+    }
+    .ms1-div2{
+        padding-top: 1rem;
+    }
+    .bottom-section-card-gender p, .bottom-section-card-age p, .bottom-section-card-muscle p, .bottom-section-card-pregnancy p, .bottom-section-card-race p{
+        max-width: 11rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .logo-div{
+        margin-bottom: 3rem;
+    }
+    .header-title-cont{
+        margin-bottom: 1rem;
+    }
+    .title{
+        font-size: 1.8rem;
+    }
+    .header-text-cont p{
+        max-width: 20rem;
+    }
+    .textbox-cont input{
+        width: 6rem;
+    }
+    .textbox-cont span{
+        right: 26%;
+    }
+    .ms1{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .pic-container{
+        height: 300px;
+        width: 100%;
+    }
+    .ms1-div2{
+        padding-left: 2rem;
+    }
+    .ms1-div2 h1{
+        max-width: 20rem;
+        margin-bottom: 1rem;
+    }
+    .ms2{
+        padding-top: 2rem;
+        padding-left: 1rem;
+    }
+    .ms2-div{
+        flex-direction: column;
+    }
+    .bottom-section{
+        padding-left: 0;
+        height: 60rem;
+        padding-right: 4.5rem;
+        padding-bottom: 1rem;
+    }
+    .bottom-section-card-gender, .bottom-section-card-age, .bottom-section-card-muscle, .bottom-section-card-pregnancy, .bottom-section-card-race{
+        position: relative;
+        padding: 0.5rem;
+    }
+    .bottom-section-card-gender{
+        left: 10%;
+        top: 2%;
+    }
+    .bottom-section-card-age{
+        left: 10%;
+        top: 4%;
+    }
+    .bottom-section-card-muscle{
+        left: 10%;
+        top: 6%;
+    }
+    .bottom-section-card-pregnancy{
+        left: 10%;
+        top: 8%;
+    }
+    .bottom-section-card-race{
+        left: 10%;
+        top: 10%;
+    }
+    .bottom-section-card-gender p, .bottom-section-card-age p, .bottom-section-card-muscle p, .bottom-section-card-pregnancy p, .bottom-section-card-race p{
+        max-width: 35rem;
+        font-size: 0.8rem;
+    }
+}
+
+
+
