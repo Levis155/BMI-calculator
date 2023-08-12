@@ -486,13 +486,16 @@ body{
     }
     .bottom-section{
         padding-left: 0;
-        height: 60rem;
-        padding-right: 4.5rem;
-        padding-bottom: 1rem;
+        height: 52rem;
+        padding-right: 0;
+    }
+    .bs-title-cont{
+        margin-bottom: 1.5rem;
     }
     .bottom-section-card-gender, .bottom-section-card-age, .bottom-section-card-muscle, .bottom-section-card-pregnancy, .bottom-section-card-race{
         position: relative;
         padding: 0.5rem;
+        width: 250px;
     }
     .bottom-section-card-gender{
         left: 10%;
@@ -516,7 +519,7 @@ body{
     }
     .bottom-section-card-gender p, .bottom-section-card-age p, .bottom-section-card-muscle p, .bottom-section-card-pregnancy p, .bottom-section-card-race p{
         max-width: 35rem;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
 
